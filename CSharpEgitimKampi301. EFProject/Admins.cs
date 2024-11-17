@@ -12,11 +12,10 @@ namespace CSharpEgitimKampi301.EFProject
     using System;
     using System.Collections.Generic;
     
-    public partial class Customers
+    public partial class Admins
     {
         public int Id { get; set; }
-        public string Name { get; set; }
-        public string Surname { get; set; }
-        public Nullable<decimal> Balance { get; set; }
+        public string Username { get; set; }
+        public string Password { get; set; }
     }
 }
