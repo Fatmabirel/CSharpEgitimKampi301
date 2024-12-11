@@ -1,6 +1,6 @@
 ﻿namespace CSharpEgitimKampi301.PresentationLayer
 {
-    partial class Form1
+    partial class FrmCategory
     {
         /// <summary>
         /// Required designer variable.
@@ -79,6 +79,7 @@
             this.btnList.TabIndex = 3;
             this.btnList.Text = "Listele";
             this.btnList.UseVisualStyleBackColor = true;
+            this.btnList.Click += new System.EventHandler(this.btnList_Click);
             // 
             // txtCategoryName
             // 
@@ -141,6 +142,7 @@
             this.btnAdd.TabIndex = 10;
             this.btnAdd.Text = "Ekle";
             this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // btnGetById
             // 
@@ -151,6 +153,7 @@
             this.btnGetById.TabIndex = 11;
             this.btnGetById.Text = "Id\'ye Göre";
             this.btnGetById.UseVisualStyleBackColor = true;
+            this.btnGetById.Click += new System.EventHandler(this.btnGetById_Click);
             // 
             // btnDelete
             // 
@@ -161,6 +164,7 @@
             this.btnDelete.TabIndex = 14;
             this.btnDelete.Text = "Sil";
             this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnUpdate
             // 
@@ -171,8 +175,9 @@
             this.btnUpdate.TabIndex = 13;
             this.btnUpdate.Text = "Güncelle";
             this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
-            // Form1
+            // FrmCategory
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -192,7 +197,7 @@
             this.Controls.Add(this.txtCategoryId);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Form1";
+            this.Name = "FrmCategory";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
